@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc} % acentuacao
 \usepackage{graphicx} % para inserir figuras
 \usepackage[T1]{fontenc}
+\usepackage{array}
 
 \hypersetup{
     hidelinks, % Remove coloração e caixas
@@ -15,7 +16,7 @@
 \nomecurso{Bacharelado em Ciência da Computação}
 \titulocurso{Bacharel em Ciência da Computação}
 
-\title{Plaforma Web para Monitoramento de Dados Oriundos de Redes de Sensores sem Fio}
+\title{Plataforma Web para Monitoramento de Dados Oriundos de Redes de Sensores sem Fio}
 
 \author{Huber}{Mathaus Corrêa}
 \advisor[Prof.~Dr.]{Marques}{Felipe de Souza}
@@ -34,7 +35,7 @@
 \chapter{Dados de Identificação}
 
 \section{Nome do Projeto}
-Plaforma Web para Monitoramento de Dados Oriundos de Redes de Sensores sem Fio
+Plataforma Web para Monitoramento de Dados Oriundos de Redes de Sensores sem Fio
 
 \section{Local de Realização}
 Centro de Desenvolvimento Tecnológico (CDTec)/Universidade Federal de Pelotas (UFPel)
@@ -52,10 +53,7 @@ Prof. Ulisses Brisolara Corrêa
 
 \chapter{Sumário Executivo}
 % (NO MÁXIMO 1 PÁGINA)
-Embora a ideia de IoT já exista há muito tempo, uma série de avanços tecnológicos recentes em algumas áreas tornou-a possível em termos práticos. Com esse conceito, através dos dados gerados podemos transformá-los em informação valorável para os seres humanos com a conectividade de dispositivos usando a internet como canal comum. 
-\\
-
-%Tendo em vista que, os sistemas de informação, como o proposto neste trabalho, têm como finalidade gerar informações para tomada de decisões. Em geral, almejamos um formato de conexão para receber os dados dos sensores localizados em campo, armazená-los em um banco de dados, dispor de ferramentas de análise de dados para extrair informações dos dados recebidos e, por fim, permitir a visualização dos dados em formato de \textit{dashboards} com o intuito de melhorar a compreensão do usuário e viabilizar o desenvolvimento de sistemas de recomendação e a realização das análises preditivas.
+Embora a ideia de IoT já exista há muito tempo, uma série de avanços tecnológicos recentes em algumas áreas tornou-a possível em termos práticos. Com esse conceito, através dos dados gerados podemos transformá-los em informação valorável para os seres humanos com a conectividade de dispositivos usando a internet como canal comum.
 \\
 
 Dessa forma, este trabalho detalha o desenvolvimento de uma aplicação web capaz de apresentar informações estruturadas a partir de \textit{dashboards}, que consideram dados oriundos de diferentes tipos de Redes de Sensores sem Fio (RSSF) aplicadas a \textit{smartfarms}, \textit{smartcities}, \textit{smartcampus}, etc. A plataforma disponibilizará APIs para os usuários cadastrados, permitindo a configuração de um \textit{dashboard} para monitorar dados de diferentes tipos de sensores, incluindo a possibilidade de monitoramento de dados de telemetria. A partir da disponibilização destas funcionalidades em uma plataforma web, almeja-se garantir um fluxo constante de dados, que darão origem a séries históricas para que sejam realizadas análises preditivas. \\
@@ -92,7 +90,7 @@ propriedade, surgiram as inovações tecnológicas. Partindo desse princípio, i
 
 %Dessa forma, levando em consideração o grande potencial, em termos econômicos, do setor do agronegócio, almejamos trazer um sistema de monitoramento de pragas que contam com a utilização de sensores que entendem o ambiente e enviam os dados para uma plataforma única centralizada. 
 
-Mesmo sabendo a existência de ferramentas e estratégias para o manejo integrado de pragas, uma das grandes complicações muitas vezes se dá devido à dificuldade no manejo da tecnologia por parte dos produtores rurais. Na área de tecnologia é muito comum a adaptação e implementação de técnicas que foram desenvolvidas por outros à nosso contexto. A exemplo disso, \citet{Valter:Lucas:2019} propôs uma abordagem através de Redes Neurais Convolucionais para identificação de duas espécies de moscas-das-frutas, que possivelmente pode vir a ser usado como uma estratégia para reconhecimento de outras espécies de pragas dentro do trabalho este que está sendo proposto.
+Mesmo sabendo a existência de ferramentas e estratégias para o auxílio à tomada de decisão no agronegócio, uma das grandes complicações muitas vezes se dá devido à dificuldade no manejo da tecnologia por parte dos produtores rurais. Na área de tecnologia é muito comum a adaptação e implementação de técnicas que foram desenvolvidas por outros à nosso contexto. A exemplo disso, \citet{Valter:Lucas:2019} propôs uma abordagem através de Redes Neurais Convolucionais para identificação de duas espécies de moscas-das-frutas, que possivelmente pode vir a ser usado como uma estratégia para reconhecimento de outras espécies de pragas dentro do trabalho este que está sendo proposto.
 \\
 
 Nota-se que, embora seja uma plataforma de auxílio e tomada de decisões para o produtor rural, o uso de métodos de Inteligência Artificial para utilização de modelos de predição com base nos dados gerados pelos sensores em campo pode auxiliar o produtor a entender a ocorrência de determinada praga e evitar infestações. 
@@ -108,7 +106,7 @@ O Núcleo de Ensino, Pesquisa e Extensão em Hidrometria e Sedimentologia para o
 As aplicações descritas acima demonstram que podem ser beneficiadas por sistemas de informação mais robustos. No caso das aplicações voltadas à \textit{smartfarms}, alguns softwares ou sistemas de informação podem ser comparados à proposta deste trabalho. O que mais se assemelha é o \citet{farmbox:2022}, desenvolvido para monitoramento e gestão do campo. Esta solução não apresenta nenhum tipo de funcionalidade para realizar análises preditivas. De forma semelhante, as soluções utilizadas pelo NEPE-HIDROSEDI não estão integradas em um único sistema. Além disso, nos dois casos, são soluções proprietárias fechadas, que dificultam o acréscimo de funcionalidades, que podem ser úteis para projetos de pesquisa que visam o desenvolvimento de novas tecnologias.
 \\
 
-De forma a propiciar um sistema integrado para o monitoramento de dados diversos sensores, este trabalho propõe o desenvolvimento de uma plataforma web que viabilizará a conectividade dos sensores por meio de APIs, que concentrarão seus dados em uma base de dados única. A partir desta integração, pretende-se desenvolver metodologias para realizar análises preditivas, através de técnicas já conhecidas de aprendizado de máquina, ou até mesmo de aprendizado profundo. A plataforma desenvolvida será validada junto aos sistemas utilizados pelo NEPE-HIDROSEDI e em uma aplicação voltada ao manejo integrado de pragas, que está sendo desenvolvida em projetos de pesquisa do rupo de Pesquisa em Engenharia de Sistemas Ciber-Físicos da UFPel em parceria com empresas locais.  
+De forma a propiciar um sistema integrado para o monitoramento de dados de diversos sensores, este trabalho propõe o desenvolvimento de uma plataforma web que viabilizará a conectividade dos sensores por meio de APIs, que concentrarão seus dados em uma base de dados única. A partir desta integração, pretende-se desenvolver metodologias para realizar análises preditivas, através de técnicas já conhecidas de aprendizado de máquina, ou até mesmo de aprendizado profundo. A plataforma desenvolvida será validada junto aos sistemas utilizados pelo NEPE-HIDROSEDI e em uma aplicação voltada ao manejo integrado de pragas, que está sendo desenvolvida em projetos de pesquisa do grupo de Pesquisa em Engenharia de Sistemas Ciber-Físicos da UFPel em parceria com empresas locais.  
 %Nesta seção, apresenta-se um breve histórico da área de concentração
 %do Projeto, partindo do tema mais abrangente até chegar
 %especificamente no assunto do Projeto. Além disso, apresenta-se a
@@ -118,7 +116,17 @@ De forma a propiciar um sistema integrado para o monitoramento de dados diversos
 %realizados~\cite{vonNeumann:1966:TSR}.
 
 \chapter{Objetivos e Metas}
-Este trabalho tem como objetivo desenvolver uma plataforma web para fornecer \textit{dashboards} e APIs, voltada à internet das coisas aplicadas a \textit{smartfarms}, \textit{smartcities}, \textit{smartcampus}, entre outros. A API criará um camada abstrata para monitorar dados de diferentes tipos de sensores, incluindo a possibilidade de monitoramento de dados de telemetria. Como objetivo secundário, almeja-se garantir um fluxo constante de dados, que darão origem séries históricas permitindo o desenvolvimento de modelos para análises preditivas. 
+Este trabalho tem como objetivo desenvolver uma plataforma web para fornecer \textit{dashboards} e APIs, voltada à internet das coisas aplicadas a \textit{smartfarms}, \textit{smartcities}, \textit{smartcampus}, entre outros. A API criará um camada abstrata para monitorar dados de diferentes tipos de sensores, incluindo a possibilidade de monitoramento de dados de telemetria. Como objetivo secundário, almeja-se garantir um fluxo constante de dados, que darão origem a séries históricas permitindo o desenvolvimento de modelos para análises preditivas. 
+\\
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.6]{tcc_flowchart.png}
+    \caption{Fluxograma básico do sistema}
+    \label{fig:my_label}
+\end{figure}
+
+Em geral, o resumo do objetivo deste trabalho é implementar um sistema de informação web, mais conhecido como software web, que roda diretamente no navegador, sendo assim disponível em qualquer dispositivo, sendo ele desktop, tablet ou mobile, com um formato de conexão via internet para receber os dados dos sensores localizados em campo, armazená-los em um banco de dados, dispondo de ferramentas de análise de dados para extrair informações dos dados recebidos e, por fim, permitir a visualização dos dados em formato de \textit{dashboards} com o intuito de melhorar a compreensão do usuário e viabilizar o desenvolvimento de sistemas de recomendação e a realização das análises preditivas.
 \\
 
 Através de ferramentas de Engenharia de Software, Banco de Dados, técnicas de Análise de Dados e conceitos de Experiência de Usuário podemos integrar à plataforma uma conexão segura com os componentes de hardware utilizando a internet como forma de comunicação, podendo fornecer informações visuais em formato de gráficos para o usuário final.
@@ -127,7 +135,10 @@ Através de ferramentas de Engenharia de Software, Banco de Dados, técnicas de 
 Para alcançá-los, os seguintes objetivos específicos se fazem necessários:
 \begin{enumerate}
 
+\item Criação das APIs para comunicação dos dados entre os sensores, o banco de dados e a plataforma web.
 \item Conhecimento dos processos de desenvolvimento, manutenção, metodologias ágeis e estratégias específicas para testes e customizações do sistema.
+\item Desenvolvimento de um CRUD para manipulações de registros realizadas diretamente no banco de dados com o intuito de estabelecer o modelo correto no manuseio desses dados.
+\item Implementação de um modelo preditivo para extração de informações valiosas de dados históricos gerados pelos sensores com o intuito de decidir as melhores ações que possam prever possíveis cenários.
 \item Definição dos ciclos de vida, propondo também uma documentação adequada aos parâmetros dos modelos de qualidade de software MPS-BR nível G.
 \end{enumerate}
 
@@ -147,22 +158,26 @@ Para alcançá-los, os seguintes objetivos específicos se fazem necessários:
 %do Objetivo Geral.
 
 \chapter{Metodologia}
-O primeiro passo será a análise de requisitos, para obter uma visão mais detalhada do projeto, visando identificar, ainda nesta fase, funcionalidades que podem se mostrar incompletas, ambíguas ou até mesmo contraditórias dentro do sistema de informação proposto. Segundo a ~\citet{IEEE:1990} a análise de requisitos é um processo que envolve o estudo das necessidades do usuário para se encontrar uma definição correta ou completa do sistema ou requisito de software. Essa etapa será vital para o desenvolvimento, pois os requisitos coletados fornecerão a referência para validar a aplicação. Durante esta etapa serão realizadas reuniões periódicas com o grupo atuante no projeto de pesquisa que este trabalho se enquadra, de forma a compreender as finalidades do sistema, bem como os tipos de dados e informações enviadas pelos sensores, sendo vital para a conclusão deste, a comunicação entre os integrantes da pesquisa, visto que, uma etapa esta conectada a outra.
+O primeiro passo será a análise de requisitos, para obter uma visão mais detalhada do projeto, visando identificar, ainda nesta fase, funcionalidades que podem se mostrar incompletas, ambíguas ou até mesmo contraditórias dentro do sistema de informação proposto. Segundo a ~\citet{IEEE:1990} a análise de requisitos é um processo que envolve o estudo das necessidades do usuário para se encontrar uma definição correta ou completa do sistema ou requisito de software. Essa etapa será de suma importância para o desenvolvimento, pois os requisitos coletados fornecerão a referência para validar a aplicação. Serão realizadas reuniões periódicas com o grupo atuante no projeto de pesquisa que este trabalho se enquadra, de forma a compreender as finalidades do sistema, bem como, os tipos de dados e informações enviadas pelos sensores, sendo vital para a conclusão deste, a comunicação entre os integrantes da pesquisa, visto que, uma etapa está conectada a outra.
 \\
 
-
+Após consolidarmos os requisitos da aplicação, a próxima etapa envolverá a modelagem, onde serão feitos o planejamento em forma de fluxogramas do funcionamento, contendo os diagramas de casos de uso, classe e sequência. Dessa forma, podemos compreender o comportamento requerido do sistema a partir da perspectiva do usuário final. Também será implementada nesta etapa a criação do diagrama entidade relacionamento e o modelo lógico com o objetivo de facilitar o projeto do banco de dados neste sistema de informação possibilitando especificar a sua estrutura lógica. Além disso, neste estágio será definido a linguagem de programação e as ferramentas que serão utilizadas para o desenvolvimento. Com isso já será possível visualizar o sistema como ele é ou como desejamos que se torne ao final da construção.
 \\
 
-Após consolidarmos os requisitos da aplicação, a próxima etapa envolve a modelagem do software, onde será possível especificar a estrutura e o comportamento antes mesmo de serem utilizados, com isso, podemos visualizar o sistema como ele é ou como desejamos que se torne ao final da construção. Nessa fase também são definidos a linguagem de programação e os componentes de hardware envolvidos;
+Na etapa de implementação, ou o desenvolvimento prático do sistema, é que começaremos a escrever, de fato, o código de programação, com base na modelagem e nos requisitos da etapa anterior. Nesta etapa daremos início a criação da interface do sistema, tal como a página de login, o registro de usuários da aplicação, a criação das APIs que vão integrar os dados do sensores, a criação dos gráficos em formato de dashboard para o usuário final e a implementação de modelos preditivos para extração de informações valiosas de dados históricos gerados pelos sensores. É bem provável que, o desenvolvimento deste sistema de informação contará com o apoio de ferramentas para agilizar o processo de desenvolvimento, como bibliotecas ou \textit{frameworks} que nos permitirão aproveitar as funções que já foram desenvolvidas, eliminando a necessidade de implementação, a exemplo disso, é esperado o uso de uma biblioteca para a criação dos gráficos. Destaca-se que essa poderá ser uma das etapas mais longas do ciclo de desenvolvimento, pois refinamentos para correções de erros são comumente necessários.
 \\
 
-Na etapa de implementação que começamos a escrever, de fato, o código de programação do software, com base na modelagem e nos requisitos da etapa anterior. Essa pode ser uma das etapas mais longas do ciclo de desenvolvimento, pois refinamentos para correções de erros são comumente necessários. Normalmente, o desenvolvimento de software conta com o apoio de ferramentas para agilizar o processo de desenvolvimento, bem como bibliotecas ou \textit{frameworks} que nos permitam aproveitar as funções que já desenvolvidas nessas bibliotecas, eliminando a necessidade de implementação.
+Para verificarmos a eficiência e o bom funcionamento do sistema que este trabalho propõe, devemos passar por uma fase de teste, para testar a funcionalidade, o desempenho e a usabilidade. Nas partes funcionais daremos prioridade aos testes de navegação e as interações do usuário, dessa forma testaremos se as páginas estarão funcionando corretamente, a exemplo de conseguir cadastrar usuários e sensores corretamente, efetuar login, e o funcionamento correto das rotas entre as páginas e os links. 
 \\
 
-Todos os softwares de mercado passam por uma fase exaustiva de teste. Esse processo visa avaliar as funcionalidades do sistema e também a sua usabilidade. Se algum erro passou despercebido na etapa de implementação, espera-se que seja encontrado e solucionado nesta etapa.
+No que se refere à desempenho, testaremos as partes não funcionais do sistema como: transferência de dados, o uso de largura de banda da rede, o máximo de usuários simultâneos, a utilização de memória, a eficiência da carga de trabalho e tempos de resposta aos comandos. Vale frisar a importância do ponto de vista da qualidade para o uso da plataforma pelo usuário, uma vez que, se o produtor rural que é o usuário final neste caso quiser baixar um relatório com as informações de determinado sensor e o tempo de resposta da aplicação for muito alta, o desempenho da aplicação não será proveitoso. Caso contrário, se o sistema atender aos requisitos de desempenho poderá ser útil testar a performance com até mil (1.000) usuários simultâneos, por exemplo.
 \\
 
-Por fim, a documentação é a etapa fundamental para que possamos manutenir o sistema. Essa parte é de extrema importância para o futuro da aplicação, levando em consideração que este projeto vai além de um trabalho de conclusão de curso, podendo se manter no mercado, dessa forma podemos ajudar os próximos desenvolvedores que não estiveram envolvidos com o processo de desenvolvimento a entenderem melhor o projeto em si.
+Quanto a usabilidade, serão testadas as partes que envolvem a experiência do usuário ao utilizar o sistema, ou seja, qual será a facilidade de usabilidade do sistema. Para isso, poderemos testar a responsividade para diversos dispositivos, assim como os conceitos de UI/UX para o fácil manejo do sistema. Ao final dos testes o sistema passará por uma validação através de dois estudos de caso, com o intuito de checarmos se as informações que serão enviadas pelos sensores conferem com as projeções da aplicação proposta neste trabalho.
+\\
+
+Por fim, adentraremos na etapa da documentação que é fundamental para que possamos manutenir o sistema. Essa parte é de extrema importância para o futuro da aplicação, levando em consideração que este projeto vai além de um trabalho de conclusão de curso, podendo se manter no mercado, e ajudar os próximos desenvolvedores que não estiveram envolvidos com o processo de desenvolvimento a compreenderem melhor o projeto em si. Em geral, para a documentação de sistemas de informação web será de suma relevância a descrição de quais páginas usam determinados arquivos, e também a referenciação das APIs que poderá ser feita de forma manual ou utilizando ferramentas, visto que documentá-las detalhadamente economizará tempo e custos de suporte.
+
 %Nesta seção, apresenta-se a metodologia proposta para o
 %desenvolvimento do Projeto. O proponente do Projeto deve descrever
 %superficialmente as atividades necessárias para a conclusão dos
@@ -172,12 +187,39 @@ Por fim, a documentação é a etapa fundamental para que possamos manutenir o s
 \chapter{Plano de Atividades e Cronograma}
 % (PARA 1 ANO)
 
-\begin{image}
-    \centering
-    \includegraphics[scale=0.65]{cronograma1.png}
-    \caption{Caption}
-    \label{fig:my_label}
-\end{image}
+\begin{center}
+\begin{tabular}{ | m{3.6cm} | m{0.65cm}| m{0.65cm} | m{0.65cm} | m{0.65cm} | m{0.65cm} | m{0.65cm} | m{0.65cm} | m{0.65cm} | m{0.65cm} | m{0.65cm} | m{0.65cm} | m{0.65cm} | m{0.65cm} | } 
+  \hline
+   Tarefa & Ago & Set & Out & Nov & Dez & Jan & Fev & Mar & Abr & Mai & Jun & Jul  \\ 
+  \hline
+  Análise de Requisitos & X & X & & & & & & & & & & \\
+  \hline 
+  Revisão da bibliografia & X & X & X & X & X & X & X & X & X & X & &\\
+  \hline
+  Escrita da Monografia Parcial & & X & X & & & & & & & & & \\
+  \hline
+  Entrega da Monografia Parcial & & & & X & & & & & & & & \\
+  \hline
+  Modelagem do Sistema & & X & X & & & & & & & & & \\
+  \hline
+  Implementação & & & X & X & X & X & X & X & X & & & \\
+  \hline
+  Escrita da Monografia Intermediária & & & & X & X & X & & & & & & \\
+  \hline
+  Entrega da Monografia Intermediária & & & & & & & X & & & & & \\
+  \hline
+  Testes e Validação & & & & & & & & & & X & X & \\
+  \hline
+  Escrita da Monografia Final & & & & & & & X & X & X & X & X & \\
+  \hline
+  Manutenção e Documentação & & & & & & & & & & & X & X\\
+  \hline
+  Preparação para defesa do TCC & & & & & & & & & & & X & \\
+  \hline
+  Defesa do TCC e entrega da Monografia Final & & & & & & & & & & & & X \\
+  \hline
+\end{tabular}
+\end{center}
 
 
 \bibliography{bibliografia}

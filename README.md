@@ -1,8 +1,0 @@
-# TCC
-[pt][only documentation] Plaforma Web para Monitoramento de Dados Oriundos de Redes de Sensores sem Fio
-
-Embora a ideia de IoT já exista há muito tempo, uma série de avanços tecnológicos recentes em algumas áreas tornou-a possível em termos práticos. Com esse conceito, através dos dados gerados podemos transformá-los em informação valorável para os seres humanos com a conectividade de dispositivos usando a internet como canal comum. 
-
-Dessa forma, este trabalho detalha o desenvolvimento de uma aplicação web capaz de apresentar informações estruturadas a partir de dashboards, que consideram dados oriundos de diferentes tipos de Redes de Sensores sem Fio (RSSF) aplicadas a smartfarms, smartcities, smartcampus, etc. A plataforma disponibilizará APIs para os usuários cadastrados, permitindo a configuração de um dashboard para monitorar dados de diferentes tipos de sensores, incluindo a possibilidade de monitoramento de dados de telemetria. A partir da disponibilização destas funcionalidades em uma plataforma web, almeja-se garantir um fluxo constante de dados, que darão origem a séries históricas para que sejam realizadas análises preditivas. 
-
-Inicialmente, a plataforma será validada a partir de dois estudos de caso, envolvendo uma aplicação rural para o manejo integrado de pragas e outra para o monitoramento de estações hidrológicas e meteorológicas espalhadas no entorno da bacia da Lagoa Mirim. O objetivo da validação será testar a integração e confiabilidade do sistema. Estas aplicações foram escolhidas pois as soluções de monitoramento estão sendo desenvolvidas em projetos do grupo de pesquisa em que o proponente está inserido, o que garantirá acesso aos sensores das RSSFs.
